@@ -1,6 +1,6 @@
 {
   "name": "scroll-slider",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lightweight scroller plugin",
   "homepage": "http://dbrekalo.github.io/scroll-slider",
   "main": "src/scrollSlider.js",
@@ -14,7 +14,8 @@
   },
   "scripts": {
     "watch": "grunt build && grunt watch",
-    "build": "grunt build"
+    "build": "grunt build",
+    "syncDocs": "git co master && git pull && git co gh-pages && git merge master && git push && git co master"
   },
   "devDependencies": {
     "bourbon": "^4.2.6",

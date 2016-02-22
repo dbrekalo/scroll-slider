@@ -1,6 +1,6 @@
 {
   "name": "scroll-slider",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lightweight scroller plugin",
   "homepage": "http://dbrekalo.github.io/scroll-slider",
   "main": "src/scrollSlider.js",
