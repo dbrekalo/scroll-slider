@@ -1,0 +1,57 @@
+@import 'node_modules/bourbon/app/assets/stylesheets/bourbon';
+@import 'node_modules/pelinkovac/scss/all';
+
+.scrollSlider {
+
+    position: relative;
+
+    > div {
+        overflow:hidden;
+    }
+
+    ul, ol {
+        display: table; margin: 0; padding: 0;
+    }
+
+    li {
+        display: table-cell; margin: 0; padding: 0;
+    }
+
+}
+
+.scrollSliderArrowNext, .scrollSliderArrowPrev {
+
+    @include normalizeButton;
+    @include transition(opacity 1s);
+    position: absolute; top: 0; bottom: 0; width: 4em;
+    text-indent: -999em; background-color: rgba(#fff, 0.8);
+
+    &:before {
+
+        $iconSize: 40;
+
+        font-size: em($iconSize,10);
+        position: absolute; left: 0; top: 50%; margin-top: em(-1*$iconSize/2,$iconSize); right: 0;
+        color: #000; text-indent: 0; text-align: center; line-height: em($iconSize,$iconSize); font-family: Arial, sans-serif;
+
+    }
+
+}
+
+.scrollSliderArrowPrev {
+
+    left: 0; &:before { content: '\2039'; }
+
+}
+
+.scrollSliderArrowNext {
+
+    right: 0; &:before { content: '\203A'; }
+
+}
+
+.scrollSliderArrowDisabled {
+
+    opacity: 0; cursor: auto;
+
+}

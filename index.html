@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Scroll slider</title>
+<meta name="description" content="Lightweight scrollable slider based on jQuery">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://rawgit.com/dbrekalo/attire/master/dist/css/build.min.css">
+<script src="https://rawgit.com/dbrekalo/attire/master/dist/js/build.min.js"></script>
+
+        <link href="dist/scrollSlider.min.css" rel="stylesheet" />
+        <script src="dist/scrollSlider.min.js"></script>
+
+    </head>
+<body>
+
+    <section class="attireBlock">
+    <div class="inner">
+
+        <h1 data-nav-title="About" class="attireTitleType1">Scroll slider</h1>
+
+        <p class="attireTextType1">
+            Scroll slider is fast and lightweight content slider.
+            Build responsive and mobile friendly scrollable sliders with simple and easy to use api.
+            Weighs less than 1 KB.
+        </p>
+
+        <nav class="attireAuthor">
+    <a class="imageElement" href="https://github.com/dbrekalo">
+        <img src="https://s.gravatar.com/avatar/32754a476fb3db1c5a1f9ad80c65d89d?s=80" alt="Damir Brekalo">
+    </a>
+    <a class="name" href="https://github.com/dbrekalo">Damir Brekalo</a>
+    <p class="socialBox">
+        <a href="mailto:dbrekalo@gmail.com" class="iconMail" title="Contact me by email">Contact me by email</a>
+        <a href="https://github.com/dbrekalo" class="iconGithub" title="Find me on Github">Find me on Github</a>
+        <a href="https://twitter.com/damirbr" class="iconTwitter" title="Reach me on Twitter">Reach me on Twitter</a>
+    </p>
+</nav>
+
+        <p class="attireTextType2">
+            In non-touch environments scroll slider does slide animations via fast css transform transitions.
+            On touch devices scrolling is delegated to native browser scroll mechanisms for optimal performance and best user experience.
+        </p>
+
+    </div>
+</section>
+
+    <section class="attireBlock mod1 testCase">
+
+    <div class="scrollSlider">
+        <div>
+            <ul>
+                <li><div class="imgCont"><img src="demo/images/0.jpg" alt="Image 0"></div></li>
+                <li><div class="imgCont"><img src="demo/images/1.jpg" alt="Image 1"></div></li>
+                <li><div class="imgCont"><img src="demo/images/2.jpg" alt="Image 2"></div></li>
+                <li><div class="imgCont"><img src="demo/images/3.jpg" alt="Image 3"></div></li>
+                <li><div class="imgCont"><img src="demo/images/4.jpg" alt="Image 4"></div></li>
+                <li><div class="imgCont"><img src="demo/images/5.jpg" alt="Image 5"></div></li>
+                <li><div class="imgCont"><img src="demo/images/6.jpg" alt="Image 6"></div></li>
+                <li><div class="imgCont"><img src="demo/images/7.jpg" alt="Image 7"></div></li>
+                <li><div class="imgCont"><img src="demo/images/8.jpg" alt="Image 8"></div></li>
+                <li><div class="imgCont"><img src="demo/images/9.jpg" alt="Image 9"></div></li>
+                <li><div class="imgCont"><img src="demo/images/10.jpg" alt="Image 10"></div></li>
+                <li><div class="imgCont"><img src="demo/images/11.jpg" alt="Image 11"></div></li>
+                <li><div class="imgCont"><img src="demo/images/12.jpg" alt="Image 12"></div></li>
+                <li><div class="imgCont"><img src="demo/images/13.jpg" alt="Image 13"></div></li>
+                <li><div class="imgCont"><img src="demo/images/14.jpg" alt="Image 14"></div></li>
+                <li><div class="imgCont"><img src="demo/images/15.jpg" alt="Image 15"></div></li>
+                <li><div class="imgCont"><img src="demo/images/16.jpg" alt="Image 16"></div></li>
+                <li><div class="imgCont"><img src="demo/images/17.jpg" alt="Image 17"></div></li>
+                <li><div class="imgCont"><img src="demo/images/18.jpg" alt="Image 18"></div></li>
+                <li><div class="imgCont"><img src="demo/images/19.jpg" alt="Image 19"></div></li>
+            </ul>
+        </div>
+    </div>
+
+    <style>
+        .scrollSlider {
+            background-color: #ededed;
+        }
+        .scrollSlider ul {
+            padding: 0 0.2em;
+        }
+        .scrollSlider li {
+            padding: 0.5em 0.2em;
+        }
+        .imgCont {
+            position: relative; width: 16em; padding-bottom: 66%; overflow: hidden;
+        }
+        .imgCont > img {
+            position: absolute; left: 0; top: 0; width: 100%;
+        }
+    </style>
+
+    <script>
+        $('.scrollSlider').scrollSlider();
+    </script>
+
+</section>
+
+    <section class="attireBlock">
+    <div class="inner">
+
+        <h2 class="attireTitleType2">Installation</h2>
+
+        <p class="attireTextType2">
+            For browser usage browse dist folder - if working with build tools go with src folder.
+            Download library files from <a href="https://github.com/dbrekalo/scroll-slider">github repo</a>,
+            get them via bower (bower install scroll-slider)
+            or via npm (npm install scroll-slider)
+        </p>
+
+    </div>
+</section>
+
+
+    <a class="githubRibbon" href="https://github.com/dbrekalo/scroll-slider">
+    <img src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+</a>
+    <footer class="attireFooter">
+    <p>This page is built with <a href="http://dbrekalo.github.io/attire/">Attire</a>.</p>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        {{ include('snippets/pageMeta.html', {
+            "title": "Scroll slider",
+            "description": "Lightweight scrollable slider based on jQuery"
+        }) }}
+
+        {{ include('snippets/attireAssets.html') }}
+
+        <link href="dist/scrollSlider.min.css" rel="stylesheet" />
+        <script src="dist/scrollSlider.min.js"></script>
+
+    </head>
+<body>
+
+    {{ include('sections/about.html') }}
+    {{ include('sections/examples.html') }}
+    {{ include('sections/installation.html') }}
+
+    {{ include('snippets/githubRibbon.html') }}
+    {{ include('snippets/attireFooter.html') }}
+
+</body>
+
+</html>

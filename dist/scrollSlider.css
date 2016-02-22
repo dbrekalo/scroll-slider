@@ -1,0 +1,76 @@
+.scrollSlider {
+  position: relative;
+}
+
+.scrollSlider > div {
+  overflow: hidden;
+}
+
+.scrollSlider ul, .scrollSlider ol {
+  display: table;
+  margin: 0;
+  padding: 0;
+}
+
+.scrollSlider li {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+}
+
+.scrollSliderArrowNext, .scrollSliderArrowPrev {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background: none;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  transition: opacity 1s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4em;
+  text-indent: -999em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.scrollSliderArrowNext::-moz-focus-inner, .scrollSliderArrowPrev::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.scrollSliderArrowNext:before, .scrollSliderArrowPrev:before {
+  font-size: 4em;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -0.5em;
+  right: 0;
+  color: #000;
+  text-indent: 0;
+  text-align: center;
+  line-height: 1em;
+  font-family: Arial, sans-serif;
+}
+
+.scrollSliderArrowPrev {
+  left: 0;
+}
+
+.scrollSliderArrowPrev:before {
+  content: '\2039';
+}
+
+.scrollSliderArrowNext {
+  right: 0;
+}
+
+.scrollSliderArrowNext:before {
+  content: '\203A';
+}
+
+.scrollSliderArrowDisabled {
+  opacity: 0;
+  cursor: auto;
+}
